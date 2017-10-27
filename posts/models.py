@@ -18,6 +18,3 @@ class Post(models.Model):
 			return self.body[:250]+" ..."
 		else:
 			return self.body
-
-	def bodyPretty(self):
-		return self.body.replace("\n","<br />")
